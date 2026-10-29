@@ -1,0 +1,12 @@
+{
+  "name": "harsh-deployment-workspace",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "build": "node build.mjs",
+    "test": "node --test tests/briefing.test.mjs",
+    "check": "node --check briefing-app.js && node --check briefing-3d.js && node --check briefing-director.js && node --check briefing-chatbot.js && node --check assembly-controls.js && node --check operations.js && node --check briefing-actions.js && node --check build.mjs && node --check server.mjs",
+    "test:server": "node tests/server-smoke.mjs http://127.0.0.1:5174/"
+  }
+}
